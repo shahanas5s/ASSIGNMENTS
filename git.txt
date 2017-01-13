@@ -1,0 +1,88 @@
+
+5s@5s-PC MINGW32 ~/Desktop (master)
+$ cd ..
+
+5s@5s-PC MINGW32 ~
+$ cd ..
+
+5s@5s-PC MINGW32 /c/Users
+$ cd 5s
+
+5s@5s-PC MINGW32 ~
+$ cd Desktop
+
+5s@5s-PC MINGW32 ~/Desktop (master)
+$ cd new
+
+5s@5s-PC MINGW32 ~/Desktop/new (master)
+$ git clone "https://github.com/shahanas5s/ASSIGNMENTS.git"
+Cloning into 'ASSIGNMENTS'...
+warning: You appear to have cloned an empty repository.
+
+5s@5s-PC MINGW32 ~/Desktop/new (master)
+$ git add *
+fatal: Unable to create 'C:/Users/5s/Desktop/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+
+5s@5s-PC MINGW32 ~/Desktop/new (master)
+$ git add *
+fatal: Unable to create 'C:/Users/5s/Desktop/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+
+5s@5s-PC MINGW32 ~/Desktop/new (master)
+$ git rm .git/index.lock
+fatal: Unable to create 'C:/Users/5s/Desktop/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+
+5s@5s-PC MINGW32 ~/Desktop/new (master)
+$ cd new
+bash: cd: new: No such file or directory
+
+5s@5s-PC MINGW32 ~/Desktop/new (master)
+$ cd ASSIGNMENTS
+
+5s@5s-PC MINGW32 ~/Desktop/new/ASSIGNMENTS (master)
+$ git add *
+
+5s@5s-PC MINGW32 ~/Desktop/new/ASSIGNMENTS (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   adobe.txt
+
+
+5s@5s-PC MINGW32 ~/Desktop/new/ASSIGNMENTS (master)
+$ git commit -m "Add new file"
+[master (root-commit) e8cf6f0] Add new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 adobe.txt
+
+5s@5s-PC MINGW32 ~/Desktop/new/ASSIGNMENTS (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/':
+remote: Anonymous access to shahanas5s/ASSIGNMENTS.git denied.
+fatal: Authentication failed for 'https://github.com/shahanas5s/ASSIGNMENTS.git/'
+
+5s@5s-PC MINGW32 ~/Desktop/new/ASSIGNMENTS (master)
+$
